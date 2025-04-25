@@ -19,7 +19,7 @@ def lecture_csv(nom_fichier):
     """
     
     #ouvrir.
-    with open(nom_fichier, newline='') as fichier_csv:
+    with open(nom_fichier, newline='', encoding='utf-8') as fichier_csv:
         #lire et stocker dans une variable.
         mon_csv = csv.reader(fichier_csv, delimiter=',') #le delimiter sert a identifier quel caractere separe les elements de la ligne.
         #transformer en une liste de liste
@@ -36,8 +36,8 @@ def lecture_csv(nom_fichier):
     vide = ['']*len(mon_csv_manipulable[0])
     if vide in mon_csv_manipulable:
         mon_csv_manipulable.pop(mon_csv_manipulable.index(vide))
-        tete = "ID,AgeGroup,BikeTimeConverted,FullName,Gender,Country,EventStatus,FinishRankGender,FinishRankGroup,FinishRankOverall,FinishTimeConverted,RunTimeConverted,SwimTimeConverted,Transition1TimeConverted,Transition2TimeConverted".split(",")
-    if tete in mon_csv_manipulable:
-        mon_csv_manipulable.pop(mon_csv_manipulable.index(tete))
+    #tete = "ID,AgeGroup,BikeTimeConverted,FullName,Gender,Country,EventStatus,FinishRankGender,FinishRankGroup,FinishRankOverall,FinishTimeConverted,RunTimeConverted,SwimTimeConverted,Transition1TimeConverted,Transition2TimeConverted".split(",")
+    #if tete in mon_csv_manipulable:
+    #    mon_csv_manipulable.pop(mon_csv_manipulable.index(tete))
 
     return mon_csv_manipulable
