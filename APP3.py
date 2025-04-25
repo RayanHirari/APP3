@@ -2,7 +2,7 @@
 """
 Created on Fri Apr 18 11:47:55 2025
 
-@author: rayan,alexis,aymeric,Gaetan,Hugo
+@author: rayan, alexis, aymeric, gaetan, hugo
 """
 import os,csv
 from LireCSV import lecture_csv
