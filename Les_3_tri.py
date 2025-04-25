@@ -2,7 +2,7 @@
 """
 Created on Wed Apr 16 23:11:17 2025
 
-@author: rayan
+@author: rayan,Aymeric,Alexis,Gaetan,Hugo
 """
 
 def tri_insertion(t, associee):
