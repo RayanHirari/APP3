@@ -2,7 +2,7 @@
 """
 Created on Fri Apr 18 16:47:54 2025
 
-@author: rayan
+@author: Hugo,rayan,Alexis,Gaetan,Aymeric
 """
 import csv
 
